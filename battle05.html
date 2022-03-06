@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle05</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -first"></div>
+      <div class="elem -second"></div>
+      <div class="elem -third"></div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #0b2429;
+      --elem_color1: #f3ac3c;
+      --elem-color2: #998235;
+    }
+    body {
+      background: var(--bg-color);
+    }
+    .container {
+      width: 240px;
+      height: 240px;
+      position: relative;
+      margin: 30px auto;
+    }
+    .elem {
+      width: 120px;
+      height: 120px;
+      position: absolute;
+    }
+    .-first {
+      border-radius: 100px;
+      background: var(--elem_color1);
+      right: 0;
+    }
+    .-second {
+      border-radius: 100px 0 100px 100px;
+      background: var(--elem-color2);
+      top: 60px;
+      left: 60px;
+    }
+    .-third {
+      border-radius: 100px 0 100px 100px;
+      background: var(--elem_color1);
+      bottom: 0;
+    }
+  </style>
+</html>
