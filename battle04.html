@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle04</title>
+  </head>
+  <body>
+    <div class="round">
+      <div class="round1"></div>
+      <div class="round2"></div>
+      <div class="round3"></div>
+    </div>
+  </body>
+
+  <style>
+    body {
+      background: #62306d;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .round {
+      width: 300px;
+      margin: 50px auto;
+      display: flex;
+    }
+    .round1,
+    .round2,
+    .round3 {
+      width: 100px;
+      height: 100px;
+      background: #f7ec7d;
+    }
+    .round1,
+    .round3 {
+      border-radius: 0 0 50% 50%;
+      margin-top: 100px;
+    }
+    .round2 {
+      border-radius: 50% 50% 0 0;
+    }
+  </style>
+</html>
