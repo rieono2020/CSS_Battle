@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle06</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -circle1"></div>
+      <div class="elem -circle2"></div>
+      <div class="elem -circle3"></div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --color-bg: #e3516e;
+      --elem-color1: #f7f3d7;
+      --elem-color2: #51b5a9;
+      --elem-color3: #fade8b;
+    }
+    body {
+      background: var(--color-bg);
+    }
+    .container {
+      width: 200px;
+      height: 200px;
+      background: var(--color-bg);
+      margin: 50px auto;
+      position: relative;
+      border-radius: 100px;
+    }
+    .elem {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+    .-circle1 {
+      background: var(--elem-color1);
+      border-radius: 0 0 0 100px;
+      bottom: 0;
+    }
+    .-circle2 {
+      background: var(--elem-color2);
+      border-radius: 100px 0 0 0;
+    }
+    .-circle3 {
+      background: var(--elem-color3);
+      border-radius: 0 100px 0 0;
+      right: 0;
+    }
+  </style>
+</html>
