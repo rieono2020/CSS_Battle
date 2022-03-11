@@ -11,7 +11,7 @@
       <div class="elem shape_rectangle"></div>
       <div class="elem shape_outside"></div>
       <div class="elem shape_inside">
-        <div class="shape_circle"></div>
+        <div class="elem shape_circle"></div>
       </div>
     </div>
   </body>
@@ -24,14 +24,13 @@
     }
     body {
       margin: 0;
+      background: var(--color-bg);
     }
     .container {
       width: 400px;
       height: 300px;
-      background: var(--color-bg);
       position: relative;
       margin: 0 auto;
-      overflow: hidden;
     }
     .elem {
       position: absolute;
@@ -63,7 +62,8 @@
       height: 50px;
       background: var(--elem-color2);
       border-radius: 50%;
-      margin: 50px auto;
+      bottom: 50px;
+      left: 50px;
     }
   </style>
 </html>
