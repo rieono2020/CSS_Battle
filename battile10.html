@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle10</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -type1">
+        <div class="c-elem -circle1"></div>
+      </div>
+      <div class="elem -type2">
+        <div class="c-elem -circle2"></div>
+      </div>
+      <div class="elem -type1">
+        <div class="c-elem -circle1"></div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --color-bg: #62306d;
+      --elem-color: #f7ec7d;
+      --circle-color1: #aa445f;
+      --ciecle-color2: #e38f66;
+    }
+    body {
+      background: var(--color-bg);
+    }
+    .container {
+      width: 300px;
+      height: 250px;
+      margin: 50px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .elem {
+      background: var(--elem-color);
+      width: 100px;
+      position: relative;
+    }
+    .-type1 {
+      height: 100px;
+    }
+    .-type2 {
+      height: 200px;
+    }
+    .c-elem {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      top: -50px;
+    }
+    .-circle1 {
+      background: var(--ciecle-color2);
+      border: 20px solid var(--circle-color1);
+    }
+    .-circle2 {
+      background: var(--circle-color1);
+      border: 20px solid var(--ciecle-color2);
+    }
+  </style>
+</html>
