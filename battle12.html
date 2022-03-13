@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle12</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -type1"></div>
+      <div class="elem -type2"></div>
+      <div class="elem -type3"></div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --color-bg: #f5d6b4;
+      --elem-color: #d86f45;
+    }
+    body {
+      background: var(--color-bg);
+    }
+    .container {
+      width: 260px;
+      height: 100px;
+      margin: 100px auto;
+      position: relative;
+    }
+    .elem {
+      width: 60px;
+      height: 30px;
+      border: 20px solid var(--elem-color);
+      position: absolute;
+    }
+    .-type1:before {
+      position: absolute;
+      content: "";
+      border-radius: 100px;
+      display: block;
+      height: 20px;
+      width: 20px;
+      background-color: var(--elem-color);
+      left: -20px;
+      top: -10px;
+    }
+    .-type1 {
+      border-radius: 0 0 100px 100px;
+      border-top: 0;
+      bottom: 0;
+    }
+    .-type2 {
+      border-radius: 100px 100px 0 0;
+      left: 80px;
+      border-bottom: 0;
+    }
+    .-type3 {
+      border-radius: 0 0 100px 100px;
+      border-top: 0;
+      bottom: 0;
+      right: 0;
+    }
+    .-type3:after {
+      position: absolute;
+      content: "";
+      border-radius: 100px;
+      display: block;
+      height: 20px;
+      width: 20px;
+      background-color: var(--elem-color);
+      right: -20px;
+      top: -10px;
+    }
+  </style>
+</html>
