@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle14</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -left">
+        <div class="elem -left_inner"></div>
+      </div>
+      <div class="elem -right">
+        <div class="elem -right_inner"></div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #f2f2b6;
+      --elem-color1: #ff6d00;
+      --elem-color2: #fd4602;
+    }
+    body {
+      background: var(--bg-color);
+    }
+    .container {
+      width: 280px;
+      height: 130px;
+      margin: 85px auto;
+      display: flex;
+      position: relative;
+    }
+    .elem {
+      border-right: 75px solid transparent;
+      border-left: 75px solid transparent;
+      position: absolute;
+    }
+    .-left {
+      border-top: 130px solid var(--elem-color1);
+    }
+    .-left_inner {
+      border-top: 130px solid var(--elem-color2);
+      left: -55px;
+      bottom: 0;
+      z-index: -1;
+    }
+    .-right {
+      border-bottom: 130px solid var(--elem-color1);
+      right: 0;
+    }
+    .-right_inner {
+      border-bottom: 130px solid var(--elem-color2);
+      right: -55px;
+      top: 0;
+    }
+  </style>
+</html>
