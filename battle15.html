@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle15</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -left"></div>
+      <div class="elem -right"></div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #09042a;
+      --elem-color1: #7b3f61;
+      --elem-color2: #e78481;
+    }
+    body {
+      background: var(--bg-color);
+    }
+    .container {
+      width: 250px;
+      height: 150px;
+      margin: 75px auto;
+      position: relative;
+    }
+    .elem {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      border-radius: 50%;
+    }
+    .-left {
+      box-shadow: -100px 0px 0px 0px var(--elem-color1);
+      left: 100px;
+    }
+    .-right {
+      box-shadow: 100px 0px 0px 0px var(--elem-color2);
+    }
+  </style>
+</html>
