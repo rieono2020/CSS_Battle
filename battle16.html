@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle16</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -circle">
+        <div class="elem -circle_middle"></div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #0b2429;
+      --elem-color1: #998235;
+      --elem-color2: #f3ac3c;
+    }
+    body {
+      background: var(--bg-color);
+    }
+    .container {
+      width: 200px;
+      height: 200px;
+      background: var(--elem-color1);
+      margin: 50px auto;
+      transform: rotate(45deg);
+      border-radius: 50% 0;
+      position: relative;
+    }
+    .elem {
+      position: absolute;
+      border-radius: 50%;
+    }
+    .-circle {
+      width: 140px;
+      height: 140px;
+      background: var(--elem-color2);
+      top: 30px;
+      left: 30px;
+      box-shadow: 0 0 0 20px var(--bg-color);
+    }
+    .-circle_middle {
+      width: 50px;
+      height: 50px;
+      background: var(--bg-color);
+      top: 45px;
+      left: 45px;
+    }
+  </style>
+</html>
