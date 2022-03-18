@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle17</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem outside -top"></div>
+      <div class="center_elem">
+        <div class="elem middle -left"></div>
+        <div class="middle_line"></div>
+        <div class="elem middle -right"></div>
+        <div class="elem outside -bottom"></div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #09042a;
+      --elem-color1: #e78481;
+      --elem-color2: #f5bb9c;
+    }
+    body {
+      background: var(--bg-color);
+    }
+    .container {
+      width: 200px;
+      height: 165px;
+      margin: 67px auto;
+      position: relative;
+    }
+    .elem {
+      position: absolute;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+    }
+    .middle {
+      background: var(--bg-color);
+      box-shadow: 0 0 0 10px var(--elem-color1);
+      top: 10px;
+    }
+    .center_elem {
+      width: 200px;
+      height: 80px;
+      position: absolute;
+      top: 43px;
+    }
+    .middle_line {
+      width: 100px;
+      height: 60px;
+      background: var(--elem-color1);
+      position: absolute;
+      left: 50px;
+      top: 10px;
+      border-radius: 50%;
+    }
+    .-left {
+      left: 10px;
+      z-index: 1;
+    }
+    .-right {
+      right: 10px;
+    }
+    .outside {
+      background: var(--elem-color2);
+      left: 70px;
+      box-shadow: 0 0 0 10px var(--bg-color);
+      z-index: 2;
+    }
+    .-bottom {
+      top: 63px;
+    }
+  </style>
+</html>
