@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle19</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -center"></div>
+      <div class="elem -left"></div>
+      <div class="elem -right"></div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #0b2429;
+      --elem-color1: #f3ac3c;
+      --elem-color2: #998235;
+      --elem-color3: #1a4341;
+    }
+    body {
+      background: var(--bg-color);
+    }
+    .container {
+      width: 140px;
+      height: 170px;
+      margin: 65px auto;
+      position: relative;
+    }
+    .elem {
+      width: 100px;
+      height: 100px;
+      background: #dd6b4d;
+      position: absolute;
+    }
+    .-center {
+      transform: rotate(45deg);
+      background: var(--elem-color1);
+      bottom: 0;
+      left: 20px;
+    }
+    .-left {
+      transform: skewY(-45deg) scaleX(70%) scaleY(70%);
+      background: var(--elem-color2);
+      top: 0;
+      left: -15px;
+    }
+    .-right {
+      transform: skewY(45deg) scaleX(70%) scaleY(70%);
+      background: var(--elem-color3);
+      top: 0;
+      right: -15px;
+    }
+  </style>
+</html>
