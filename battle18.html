@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle18</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem-block">
+        <div class="elem -type1"></div>
+        <div class="elem -type2"></div>
+        <div class="elem -type1"></div>
+      </div>
+      <div class="elem-block">
+        <div class="elem -type2"></div>
+        <div class="elem -type1"></div>
+        <div class="elem -type2"></div>
+      </div>
+      <div class="elem-block">
+        <div class="elem -type1"></div>
+        <div class="elem -type2"></div>
+        <div class="elem -type1"></div>
+      </div>
+      <div class="elem-block">
+        <div class="elem -type2"></div>
+        <div class="elem -type1"></div>
+        <div class="elem -type2"></div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #5c434c;
+      --elem-color1: #f09462;
+      --elem-color2: #f5d6b4;
+    }
+    body {
+      background: var(--bg-color);
+      text-align: -webkit-center;
+    }
+    .container {
+      width: 400px;
+      height: 280px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px 2px;
+    }
+    .elem-block {
+      margin: 0 20px 20px 0;
+    }
+    .-type1 {
+      width: 80px;
+      height: 80px;
+      background: var(--elem-color1);
+      border-radius: 100% 0 0 0;
+    }
+    .-type2 {
+      width: 80px;
+      height: 80px;
+      background: var(--elem-color2);
+      border-radius: 100% 0 0 0;
+    }
+    :is(.-type1, .-type2) {
+      margin-bottom: 20px;
+    }
+  </style>
+</html>
