@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle20</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -left">
+        <div class="small-elem -type1"></div>
+        <div class="small-elem -type2"></div>
+      </div>
+      <div class="elem -right">
+        <div class="small-elem -type3"></div>
+        <div class="small-elem -type4"></div>
+      </div>
+      <div class="xsmall-elem -type5"></div>
+      <div class="xsmall-elem -type6"></div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #62306d;
+      --elem-color1: #f7ec7d;
+      --elem-color2: #e38f66;
+    }
+    body {
+      background: var(--bg-color);
+    }
+    .container {
+      width: 200px;
+      height: 100px;
+      background: #dd6b4d;
+      margin: 100px auto;
+      position: relative;
+      display: flex;
+    }
+    .elem {
+      height: 100px;
+    }
+    .-left {
+      width: 140px;
+      background: var(--elem-color1);
+    }
+    .-right {
+      width: 60px;
+      background: var(--elem-color2);
+    }
+    .small-elem {
+      position: absolute;
+      border: solid var(--bg-color);
+      border-width: 20px 20px 0 0;
+    }
+    .-type1 {
+      border-bottom-right-radius: 100px;
+    }
+    .-type2 {
+      bottom: 0;
+      border-top-right-radius: 100px;
+    }
+    .-type3 {
+      bottom: 0;
+      right: 0;
+      border-top-left-radius: 100px;
+    }
+    .-type4 {
+      top: 0;
+      right: 0;
+      border-bottom-left-radius: 100px;
+    }
+
+    .xsmall-elem {
+      position: absolute;
+      border: solid var(--bg-color);
+      border-width: 10px 20px 0 0;
+    }
+    .-type5 {
+      top: 0;
+      right: 50px;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+    .-type6 {
+      bottom: 0;
+      right: 50px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+    }
+  </style>
+</html>
