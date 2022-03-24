@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle23</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -square"></div>
+      <div class="elem -small_square"></div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #f3ac3c;
+      --elem-color1: #1a4341;
+      --elem-color2: #998235;
+    }
+    body {
+      background: var(--bg-color);
+    }
+    .container {
+      width: 200px;
+      height: 200px;
+      background: var(--elem-color1);
+      margin: 50px auto;
+      position: relative;
+    }
+    .elem {
+      position: absolute;
+      bottom: 0;
+    }
+    .-square {
+      width: 100px;
+      height: 100px;
+      background: var(--elem-color2);
+    }
+    .-small_square {
+      width: 50px;
+      height: 50px;
+      background: var(--bg-color);
+      left: 50px;
+    }
+  </style>
+</html>
