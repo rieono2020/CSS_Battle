@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle21</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem1 elem_long -left_long"></div>
+      <div class="elem1 elem_short -left_short"></div>
+      <div class="elem2 elem_long -right_long"></div>
+      <div class="elem2 elem_short -right_short"></div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #222;
+      --elem-color1: #f2994a;
+      --elem-color2: #2d9cdb;
+    }
+    body {
+      background: var(--bg-color);
+    }
+    .container {
+      width: 150px;
+      height: 180px;
+      margin: 60px auto;
+      position: relative;
+    }
+    .elem_long {
+      position: absolute;
+      width: 95px;
+      height: 30px;
+      transform: rotate(-45deg);
+    }
+    .elem_short {
+      position: absolute;
+      width: 80px;
+      height: 30px;
+      transform: rotate(-135deg);
+    }
+    .elem1 {
+      background: var(--elem-color1);
+    }
+    .elem2 {
+      background: var(--elem-color2);
+    }
+    .-left_long {
+      top: 32px;
+      left: -1px;
+      border-top-left-radius: 10px;
+    }
+    .-left_short {
+      top: 76px;
+      left: -2px;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 10px;
+    }
+    .-right_long {
+      bottom: 32px;
+      right: 0px;
+      border-bottom-right-radius: 10px;
+    }
+    .-right_short {
+      bottom: 76px;
+      right: 0;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 5px;
+    }
+  </style>
+</html>
