@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battle24</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem -left">
+        <div class="elem_small -circle_left"></div>
+      </div>
+      <div class="elem -right">
+        <div class="elem_small -circle_right"></div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    :root {
+      --bg-color: #62306d;
+      --elem-color1: #f7ec7d;
+      --elem-color2: #aa445f;
+      --elem-color3: #e38f66;
+    }
+    body {
+      background: var(--bg-color);
+    }
+    .container {
+      width: 240px;
+      height: 200px;
+      margin: 50px auto;
+      position: relative;
+    }
+    .elem {
+      width: 100px;
+      height: 150px;
+      position: absolute;
+      border-radius: 50px;
+    }
+    .-left {
+      background: var(--elem-color2);
+    }
+    .-right {
+      background: var(--elem-color3);
+      right: 0;
+      bottom: 0;
+    }
+    .elem_small {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background: var(--elem-color1);
+    }
+    .-circle_left {
+      margin-top: 50px;
+    }
+  </style>
+</html>
